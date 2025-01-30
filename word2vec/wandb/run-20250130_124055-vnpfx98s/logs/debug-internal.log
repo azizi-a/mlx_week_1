@@ -1,0 +1,16 @@
+{"time":"2025-01-30T12:40:56.175248618Z","level":"INFO","msg":"stream: starting","core version":"0.19.5","symlink path":"/home/azizi/Code/MLX/week_1/word2vec/wandb/run-20250130_124055-vnpfx98s/logs/debug-core.log"}
+{"time":"2025-01-30T12:40:56.279197797Z","level":"INFO","msg":"created new stream","id":"vnpfx98s"}
+{"time":"2025-01-30T12:40:56.279214858Z","level":"INFO","msg":"stream: started","id":"vnpfx98s"}
+{"time":"2025-01-30T12:40:56.279279867Z","level":"INFO","msg":"writer: Do: started","stream_id":"vnpfx98s"}
+{"time":"2025-01-30T12:40:56.279409072Z","level":"INFO","msg":"sender: started","stream_id":"vnpfx98s"}
+{"time":"2025-01-30T12:40:56.279422932Z","level":"INFO","msg":"handler: started","stream_id":"vnpfx98s"}
+{"time":"2025-01-30T12:40:56.48907296Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-30T12:40:57.461170903Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-30T12:40:57.462208195Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-30T12:40:58.46232686Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model-weights","runtime_seconds":1.003746755,"subtasks":[{"desc":"weights.pt","runtime_seconds":0.39441039,"progress":"884.3KB/884.3KB"}]}],"total_operations":1}}
+{"time":"2025-01-30T12:40:59.701462103Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-30T12:41:00.938614543Z","level":"INFO","msg":"stream: closing","id":"vnpfx98s"}
+{"time":"2025-01-30T12:41:00.938699497Z","level":"INFO","msg":"handler: closed","stream_id":"vnpfx98s"}
+{"time":"2025-01-30T12:41:00.938752852Z","level":"INFO","msg":"writer: Close: closed","stream_id":"vnpfx98s"}
+{"time":"2025-01-30T12:41:00.938813559Z","level":"INFO","msg":"sender: closed","stream_id":"vnpfx98s"}
+{"time":"2025-01-30T12:41:00.938959723Z","level":"INFO","msg":"stream: closed","id":"vnpfx98s"}

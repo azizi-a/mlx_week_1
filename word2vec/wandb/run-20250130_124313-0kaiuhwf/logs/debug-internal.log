@@ -1,0 +1,16 @@
+{"time":"2025-01-30T12:43:13.308039713Z","level":"INFO","msg":"stream: starting","core version":"0.19.5","symlink path":"/home/azizi/Code/MLX/week_1/word2vec/wandb/run-20250130_124313-0kaiuhwf/logs/debug-core.log"}
+{"time":"2025-01-30T12:43:13.413971269Z","level":"INFO","msg":"created new stream","id":"0kaiuhwf"}
+{"time":"2025-01-30T12:43:13.414024542Z","level":"INFO","msg":"stream: started","id":"0kaiuhwf"}
+{"time":"2025-01-30T12:43:13.414117172Z","level":"INFO","msg":"writer: Do: started","stream_id":"0kaiuhwf"}
+{"time":"2025-01-30T12:43:13.414117648Z","level":"INFO","msg":"handler: started","stream_id":"0kaiuhwf"}
+{"time":"2025-01-30T12:43:13.41418411Z","level":"INFO","msg":"sender: started","stream_id":"0kaiuhwf"}
+{"time":"2025-01-30T12:43:13.616844609Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-30T12:56:20.694054871Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-30T12:56:20.694442493Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-30T12:56:21.694788749Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model-weights","runtime_seconds":1.003057447,"subtasks":[{"desc":"weights.pt","runtime_seconds":0.158165291,"progress":"1.1MB/20.6MB"}]}],"total_operations":1}}
+{"time":"2025-01-30T12:56:24.385574769Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-30T12:56:25.579409252Z","level":"INFO","msg":"stream: closing","id":"0kaiuhwf"}
+{"time":"2025-01-30T12:56:25.579440793Z","level":"INFO","msg":"handler: closed","stream_id":"0kaiuhwf"}
+{"time":"2025-01-30T12:56:25.579468655Z","level":"INFO","msg":"writer: Close: closed","stream_id":"0kaiuhwf"}
+{"time":"2025-01-30T12:56:25.579530114Z","level":"INFO","msg":"sender: closed","stream_id":"0kaiuhwf"}
+{"time":"2025-01-30T12:56:25.579610154Z","level":"INFO","msg":"stream: closed","id":"0kaiuhwf"}

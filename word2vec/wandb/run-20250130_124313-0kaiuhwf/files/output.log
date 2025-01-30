@@ -1,0 +1,815 @@
+Epoch 1, Loss: 1.4518: 100%|████████████████████████████| 3249/3249 [01:05<00:00, 49.52it/s]
+
+Epoch 1 similar words embedding by dot product:
+
+Words similar to 'king':
+app: 3.5719
+os: 3.4765
+<SLASH>: 3.4671
+you: 3.4171
+day: 3.3173
+app: 3.572
+os: 3.476
+<SLASH>: 3.467
+you: 3.417
+day: 3.317
+
+Words similar to 'queen':
+victoria: 2.5649
+lives: 2.4654
+anonymous: 2.4444
+migrations: 2.3052
+evidence: 2.2803
+victoria: 2.565
+lives: 2.465
+anonymous: 2.444
+migrations: 2.305
+evidence: 2.280
+
+Words similar to 'man':
+your: 5.3954
+ask: 5.2160
+how: 4.8216
+<LEFT: 4.7524
+online: 4.7137
+your: 5.395
+ask: 5.216
+how: 4.822
+<LEFT: 4.752
+online: 4.714
+
+Words similar to 'woman':
+000: 3.8604
+how: 3.0333
+ask: 3.0202
+this: 2.9971
+<SLASH>: 2.9664
+000: 3.860
+how: 3.033
+ask: 3.020
+this: 2.997
+<SLASH>: 2.966
+
+Words similar to 'dog':
+cash: 2.8245
+cape: 2.6456
+dave: 2.4342
+x: 2.4315
+arrested: 2.4243
+cash: 2.825
+cape: 2.646
+dave: 2.434
+x: 2.431
+arrested: 2.424
+
+Words similar to 'cat':
+js: 2.4504
+build: 2.4382
+community: 2.4369
+network: 2.4350
+links: 2.3853
+js: 2.450
+build: 2.438
+community: 2.437
+network: 2.435
+links: 2.385
+==============================================
+Epoch 2, Loss: 1.0018: 100%|████████████████████████████| 3249/3249 [01:19<00:00, 40.63it/s]
+
+
+Epoch 2 similar words embedding by dot product:
+
+Words similar to 'king':
+<RIGHT: 6.1805
+ask: 5.6649
+website: 5.3978
+<LEFT: 5.2855
+<SLASH>: 5.2715
+<RIGHT: 6.181
+ask: 5.665
+website: 5.398
+<LEFT: 5.286
+<SLASH>: 5.272
+
+Words similar to 'queen':
+your: 4.7026
+<LEFT: 4.5887
+how: 4.5647
+new: 4.5175
+android: 4.3518
+your: 4.703
+<LEFT: 4.589
+how: 4.565
+new: 4.518
+android: 4.352
+
+Words similar to 'man':
+ask: 6.3558
+<LEFT: 6.1839
+how: 5.5693
+free: 5.5567
+<RIGHT: 5.5437
+ask: 6.356
+<LEFT: 6.184
+how: 5.569
+free: 5.557
+<RIGHT: 5.544
+
+Words similar to 'woman':
+this: 5.0196
+how: 4.8940
+ask: 4.8577
+facebook: 4.5650
+new: 4.5172
+this: 5.020
+how: 4.894
+ask: 4.858
+facebook: 4.565
+new: 4.517
+
+Words similar to 'dog':
+why: 4.3043
+how: 4.1258
+cash: 4.0966
+startup: 4.0657
+new: 4.0335
+why: 4.304
+how: 4.126
+cash: 4.097
+startup: 4.066
+new: 4.034
+
+Words similar to 'cat':
+<AMPERSAND>: 4.5670
+your: 4.2280
+2012: 3.9634
+out: 3.9524
+how: 3.8836
+<AMPERSAND>: 4.567
+your: 4.228
+2012: 3.963
+out: 3.952
+how: 3.884
+==============================================
+Epoch 3, Loss: 0.8735: 100%|████████████████████████████| 3249/3249 [01:17<00:00, 41.93it/s]
+
+
+Epoch 3 similar words embedding by dot product:
+
+Words similar to 'king':
+<RIGHT: 6.2357
+ask: 5.3659
+app: 5.0402
+business: 4.8939
+<QUOTATION: 4.8073
+<RIGHT: 6.236
+ask: 5.366
+app: 5.040
+business: 4.894
+<QUOTATION: 4.807
+
+Words similar to 'queen':
+<LEFT: 4.6459
+new: 4.5698
+ask: 4.3739
+how: 4.2941
+friends: 4.1232
+<LEFT: 4.646
+new: 4.570
+ask: 4.374
+how: 4.294
+friends: 4.123
+
+Words similar to 'man':
+free: 5.8463
+ask: 5.7879
+<LEFT: 5.5224
+my: 5.3107
+what: 5.1430
+free: 5.846
+ask: 5.788
+<LEFT: 5.522
+my: 5.311
+what: 5.143
+
+Words similar to 'woman':
+how: 5.1864
+this: 5.0921
+new: 4.8732
+you: 4.8424
+<QUOTATION: 4.6392
+how: 5.186
+this: 5.092
+new: 4.873
+you: 4.842
+<QUOTATION: 4.639
+
+Words similar to 'dog':
+how: 4.8178
+why: 4.3187
+ask: 4.1941
+<RIGHT: 4.1392
+startup: 4.0262
+how: 4.818
+why: 4.319
+ask: 4.194
+<RIGHT: 4.139
+startup: 4.026
+
+Words similar to 'cat':
+social: 5.0487
+your: 4.7235
+<AMPERSAND>: 4.4528
+out: 4.3807
+into: 4.3486
+social: 5.049
+your: 4.724
+<AMPERSAND>: 4.453
+out: 4.381
+into: 4.349
+==============================================
+Epoch 4, Loss: 0.7926: 100%|████████████████████████████| 3249/3249 [01:23<00:00, 39.08it/s]
+
+
+Epoch 4 similar words embedding by dot product:
+
+Words similar to 'king':
+c: 5.5635
+<RIGHT: 5.3272
+how: 5.3100
+more: 5.2924
+ask: 5.2474
+c: 5.564
+<RIGHT: 5.327
+how: 5.310
+more: 5.292
+ask: 5.247
+
+Words similar to 'queen':
+first: 5.1189
+<LEFT: 4.9985
+were: 4.9293
+more: 4.8125
+world: 4.7109
+first: 5.119
+<LEFT: 4.998
+were: 4.929
+more: 4.813
+world: 4.711
+
+Words similar to 'man':
+ask: 5.8438
+startup: 5.1087
+free: 5.0189
+my: 4.9107
+new: 4.5864
+ask: 5.844
+startup: 5.109
+free: 5.019
+my: 4.911
+new: 4.586
+
+Words similar to 'woman':
+000: 4.7248
+how: 4.6761
+all: 4.6698
+0: 4.4560
+you: 4.3773
+000: 4.725
+how: 4.676
+all: 4.670
+0: 4.456
+you: 4.377
+
+Words similar to 'dog':
+how: 4.6021
+<RIGHT: 4.5526
+<LEFT: 4.4971
+startup: 4.4411
+were: 4.4242
+how: 4.602
+<RIGHT: 4.553
+<LEFT: 4.497
+startup: 4.441
+were: 4.424
+
+Words similar to 'cat':
+your: 5.5015
+social: 4.8943
+out: 4.6396
+2012: 4.5193
+first: 4.3125
+your: 5.502
+social: 4.894
+out: 4.640
+2012: 4.519
+first: 4.313
+==============================================
+Epoch 5, Loss: 0.7305: 100%|████████████████████████████| 3249/3249 [01:24<00:00, 38.52it/s]
+
+
+Epoch 5 similar words embedding by dot product:
+
+Words similar to 'king':
+c: 6.0357
+<LEFT: 5.4125
+more: 5.1883
+ask: 5.1051
+<RIGHT: 5.0723
+c: 6.036
+<LEFT: 5.413
+more: 5.188
+ask: 5.105
+<RIGHT: 5.072
+
+Words similar to 'queen':
+<LEFT: 5.0277
+new: 4.6893
+were: 4.5651
+bill: 4.5155
+victoria: 4.3308
+<LEFT: 5.028
+new: 4.689
+were: 4.565
+bill: 4.516
+victoria: 4.331
+
+Words similar to 'man':
+startup: 5.2692
+ask: 5.1490
+my: 4.9845
+<LEFT: 4.8635
+why: 4.8180
+startup: 5.269
+ask: 5.149
+my: 4.985
+<LEFT: 4.863
+why: 4.818
+
+Words similar to 'woman':
+you: 5.3821
+how: 5.3217
+<LEFT: 5.1846
+0: 5.0582
+about: 4.9989
+you: 5.382
+how: 5.322
+<LEFT: 5.185
+0: 5.058
+about: 4.999
+
+Words similar to 'dog':
+how: 5.2654
+why: 4.9599
+<QUOTATION: 4.8379
+<LEFT: 4.7897
+apple: 4.6715
+how: 5.265
+why: 4.960
+<QUOTATION: 4.838
+<LEFT: 4.790
+apple: 4.671
+
+Words similar to 'cat':
+your: 5.7933
+social: 5.4646
+first: 5.0763
+2012: 4.8689
+be: 4.7167
+your: 5.793
+social: 5.465
+first: 5.076
+2012: 4.869
+be: 4.717
+==============================================
+Epoch 6, Loss: 0.7300: 100%|████████████████████████████| 3249/3249 [01:21<00:00, 39.83it/s]
+
+
+Epoch 6 similar words embedding by dot product:
+
+Words similar to 'king':
+madrid: 5.6388
+v: 5.4545
+<LEFT: 5.4034
+henry: 5.3747
+new: 5.1008
+madrid: 5.639
+v: 5.455
+<LEFT: 5.403
+henry: 5.375
+new: 5.101
+
+Words similar to 'queen':
+new: 4.7690
+were: 4.6297
+<LEFT: 4.6237
+world: 4.3698
+also: 4.3697
+new: 4.769
+were: 4.630
+<LEFT: 4.624
+world: 4.370
+also: 4.370
+
+Words similar to 'man':
+my: 5.8654
+why: 5.1067
+utd: 4.9242
+startup: 4.7265
+ask: 4.7115
+my: 5.865
+why: 5.107
+utd: 4.924
+startup: 4.727
+ask: 4.711
+
+Words similar to 'woman':
+you: 5.0356
+0: 4.9868
+this: 4.8599
+about: 4.6933
+i: 4.6132
+you: 5.036
+0: 4.987
+this: 4.860
+about: 4.693
+i: 4.613
+
+Words similar to 'dog':
+why: 5.6502
+startup: 5.2905
+show: 4.9688
+how: 4.9567
+this: 4.9492
+why: 5.650
+startup: 5.291
+show: 4.969
+how: 4.957
+this: 4.949
+
+Words similar to 'cat':
+your: 6.3644
+2012: 4.6791
+social: 4.4861
+first: 4.4806
+build: 4.4169
+your: 6.364
+2012: 4.679
+social: 4.486
+first: 4.481
+build: 4.417
+==============================================
+Epoch 7, Loss: 0.6422: 100%|████████████████████████████| 3249/3249 [01:18<00:00, 41.33it/s]
+
+
+Epoch 7 similar words embedding by dot product:
+
+Words similar to 'king':
+madrid: 5.9000
+henry: 5.8073
+new: 5.3636
+<SLASH>: 5.3132
+edward: 5.2836
+madrid: 5.900
+henry: 5.807
+new: 5.364
+<SLASH>: 5.313
+edward: 5.284
+
+Words similar to 'queen':
+new: 5.3263
+world: 4.7732
+has: 4.6602
+believe: 4.6018
+imperial: 4.5795
+new: 5.326
+world: 4.773
+has: 4.660
+believe: 4.602
+imperial: 4.580
+
+Words similar to 'man':
+my: 5.9070
+utd: 5.7069
+he: 4.8459
+<LEFT: 4.6569
+over: 4.5502
+my: 5.907
+utd: 5.707
+he: 4.846
+<LEFT: 4.657
+over: 4.550
+
+Words similar to 'woman':
+this: 5.4624
+000: 5.2473
+you: 4.8053
+son: 4.7503
+most: 4.5434
+this: 5.462
+000: 5.247
+you: 4.805
+son: 4.750
+most: 4.543
+
+Words similar to 'dog':
+why: 5.6004
+<RIGHT: 5.2698
+facebook: 5.1548
+how: 5.1412
+what: 4.9361
+why: 5.600
+<RIGHT: 5.270
+facebook: 5.155
+how: 5.141
+what: 4.936
+
+Words similar to 'cat':
+your: 5.7887
+their: 4.9053
+social: 4.6043
+network: 4.6015
+2012: 4.4202
+your: 5.789
+their: 4.905
+social: 4.604
+network: 4.602
+2012: 4.420
+==============================================
+Epoch 8, Loss: 0.5944: 100%|████████████████████████████| 3249/3249 [01:20<00:00, 40.32it/s]
+
+
+Epoch 8 similar words embedding by dot product:
+
+Words similar to 'king':
+henry: 6.3956
+madrid: 6.0025
+i: 5.6926
+<LEFT: 5.6191
+w: 5.6156
+henry: 6.396
+madrid: 6.003
+i: 5.693
+<LEFT: 5.619
+w: 5.616
+
+Words similar to 'queen':
+chancellor: 5.4920
+has: 5.1229
+he: 4.7312
+french: 4.6052
+see: 4.5473
+chancellor: 5.492
+has: 5.123
+he: 4.731
+french: 4.605
+see: 4.547
+
+Words similar to 'man':
+my: 5.5510
+ask: 4.8207
+utd: 4.7899
+could: 4.5633
+why: 4.5503
+my: 5.551
+ask: 4.821
+utd: 4.790
+could: 4.563
+why: 4.550
+
+Words similar to 'woman':
+000: 5.2038
+this: 4.9214
+which: 4.9157
+how: 4.8973
+see: 4.8414
+000: 5.204
+this: 4.921
+which: 4.916
+how: 4.897
+see: 4.841
+
+Words similar to 'dog':
+why: 5.8918
+facebook: 5.4836
+now: 5.3082
+google: 4.8094
+<RIGHT: 4.6893
+why: 5.892
+facebook: 5.484
+now: 5.308
+google: 4.809
+<RIGHT: 4.689
+
+Words similar to 'cat':
+your: 5.8497
+difference: 4.8373
+2012: 4.6339
+ipo: 4.4960
+<AMPERSAND>: 4.4418
+your: 5.850
+difference: 4.837
+2012: 4.634
+ipo: 4.496
+<AMPERSAND>: 4.442
+==============================================
+Epoch 9, Loss: 0.5873: 100%|████████████████████████████| 3249/3249 [01:15<00:00, 42.79it/s]
+
+
+Epoch 9 similar words embedding by dot product:
+
+Words similar to 'king':
+henry: 6.5944
+d: 6.4353
+madrid: 6.3228
+iii: 5.9679
+texas: 5.7349
+henry: 6.594
+d: 6.435
+madrid: 6.323
+iii: 5.968
+texas: 5.735
+
+Words similar to 'queen':
+chancellor: 5.6302
+ordered: 5.2652
+new: 5.1995
+be: 4.7583
+he: 4.7542
+chancellor: 5.630
+ordered: 5.265
+new: 5.200
+be: 4.758
+he: 4.754
+
+Words similar to 'man':
+utd: 6.2440
+my: 5.2691
+<QUOTATION: 4.9331
+how: 4.8228
+watch: 4.7170
+utd: 6.244
+my: 5.269
+<QUOTATION: 4.933
+how: 4.823
+watch: 4.717
+
+Words similar to 'woman':
+this: 5.4434
+would: 5.0345
+ending: 4.7383
+about: 4.6801
+how: 4.5840
+this: 5.443
+would: 5.034
+ending: 4.738
+about: 4.680
+how: 4.584
+
+Words similar to 'dog':
+<LEFT: 6.0287
+why: 5.5779
+now: 5.1412
+facebook: 5.1104
+startup: 5.0317
+<LEFT: 6.029
+why: 5.578
+now: 5.141
+facebook: 5.110
+startup: 5.032
+
+Words similar to 'cat':
+your: 5.6397
+first: 5.4485
+<LEFT: 5.1109
+difference: 5.0364
+iphone: 4.9921
+your: 5.640
+first: 5.449
+<LEFT: 5.111
+difference: 5.036
+iphone: 4.992
+==============================================
+Epoch 10, Loss: 0.5448: 100%|███████████████████████████| 3249/3249 [01:18<00:00, 41.18it/s]
+
+
+Epoch 10 similar words embedding by dot product:
+
+Words similar to 'king':
+henry: 6.0914
+iii: 6.0908
+texas: 6.0640
+soviet: 5.7363
+ii: 5.6218
+henry: 6.091
+iii: 6.091
+texas: 6.064
+soviet: 5.736
+ii: 5.622
+
+Words similar to 'queen':
+ordered: 6.1928
+chancellor: 6.0125
+believe: 5.2089
+equality: 5.1267
+american: 5.0722
+ordered: 6.193
+chancellor: 6.013
+believe: 5.209
+equality: 5.127
+american: 5.072
+
+Words similar to 'man':
+utd: 7.0484
+<QUOTATION: 5.1554
+not: 4.8253
+computing: 4.7901
+ask: 4.7408
+utd: 7.048
+<QUOTATION: 5.155
+not: 4.825
+computing: 4.790
+ask: 4.741
+
+Words similar to 'woman':
+this: 5.9694
+how: 5.1485
+has: 5.1386
+i: 4.8008
+there: 4.7754
+this: 5.969
+how: 5.149
+has: 5.139
+i: 4.801
+there: 4.775
+
+Words similar to 'dog':
+why: 5.5282
+world’s: 5.3681
+cash: 5.3403
+startups: 5.2916
+we: 5.2551
+why: 5.528
+world’s: 5.368
+cash: 5.340
+startups: 5.292
+we: 5.255
+
+Words similar to 'cat':
+first: 5.5658
+your: 5.4061
+<LEFT: 5.3559
+2012: 5.2841
+difference: 5.0453
+first: 5.566
+your: 5.406
+<LEFT: 5.356
+2012: 5.284
+difference: 5.045
+==============================================
+
+
+Words similar to 'king':
+february: 0.355
+soviet: 0.350
+prime: 0.335
+william: 0.313
+c: 0.311
+
+Words similar to 'queen':
+american: 0.379
+english: 0.364
+were: 0.314
+other: 0.311
+bill: 0.311
+
+Words similar to 'man':
+tech: 0.335
+market: 0.328
+watch: 0.304
+who: 0.300
+right: 0.298
+
+Words similar to 'woman':
+this: 0.358
+has: 0.349
+even: 0.343
+there: 0.335
+so: 0.335
+
+Words similar to 'dog':
+we: 0.349
+cash: 0.330
+now: 0.326
+startups: 0.323
+should: 0.315
+
+Words similar to 'cat':
+first: 0.384
+design: 0.360
+industry: 0.339
+build: 0.323
+help: 0.322
+Saving...
+Uploading...
+Done!

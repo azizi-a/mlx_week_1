@@ -1,0 +1,280 @@
+Epoch 1, Loss: 1.9313: 100%|██████████████████████████████| 738/738 [00:10<00:00, 70.39it/s]
+
+Epoch 1 similar words embedding:
+
+Words similar to 'king':
+park: 0.308
+fragmentation: 0.304
+upside: 0.296
+substrate: 0.294
+2020: 0.289
+
+Words similar to 'queen':
+file: 0.330
+store: 0.299
+mixpanel: 0.287
+early: 0.284
+previous: 0.276
+
+Words similar to 'man':
+place: 0.320
+who: 0.301
+memory: 0.300
+personal: 0.297
+15: 0.292
+
+Words similar to 'woman':
+coercion: 0.360
+locals: 0.333
+assigns: 0.332
+weakness: 0.324
+connector: 0.314
+
+Words similar to 'dog':
+less: 0.319
+sparse: 0.305
+no: 0.303
+standards: 0.298
+more: 0.291
+
+Words similar to 'cat':
+cognate: 0.327
+get: 0.323
+use: 0.319
+be: 0.316
+see: 0.311
+==============================================
+Epoch 2, Loss: 1.3923: 100%|██████████████████████████████| 738/738 [00:10<00:00, 70.83it/s]
+
+
+Epoch 2 similar words embedding:
+
+Words similar to 'king':
+over: 0.351
+set: 0.322
+south: 0.320
+black: 0.312
+american: 0.308
+
+Words similar to 'queen':
+file: 0.370
+store: 0.343
+early: 0.333
+media: 0.328
+research: 0.318
+
+Words similar to 'man':
+place: 0.424
+personal: 0.419
+video: 0.374
+new: 0.369
+who: 0.368
+
+Words similar to 'woman':
+<EXCLAMATION: 0.321
+languages: 0.296
+chinese: 0.296
+microsoft: 0.293
+line: 0.290
+
+Words similar to 'dog':
+less: 0.373
+more: 0.307
+no: 0.304
+uk: 0.289
+several: 0.286
+
+Words similar to 'cat':
+–: 0.385
+create: 0.373
+get: 0.361
+work: 0.350
+should: 0.349
+==============================================
+Epoch 3, Loss: 1.1380: 100%|██████████████████████████████| 738/738 [00:10<00:00, 72.31it/s]
+
+
+Epoch 3 similar words embedding:
+
+Words similar to 'king':
+over: 0.407
+world: 0.368
+who: 0.357
+time: 0.349
+south: 0.347
+
+Words similar to 'queen':
+file: 0.379
+media: 0.356
+store: 0.351
+dead: 0.349
+people: 0.331
+
+Words similar to 'man':
+personal: 0.424
+video: 0.382
+new: 0.364
+mobile: 0.363
+simple: 0.362
+
+Words similar to 'woman':
+microsoft: 0.366
+line: 0.354
+chinese: 0.323
+anti: 0.319
+had: 0.316
+
+Words similar to 'dog':
+less: 0.371
+more: 0.333
+several: 0.332
+no: 0.329
+start: 0.328
+
+Words similar to 'cat':
+work: 0.389
+–: 0.362
+create: 0.360
+start: 0.359
+should: 0.359
+==============================================
+Epoch 4, Loss: 0.9827: 100%|██████████████████████████████| 738/738 [00:10<00:00, 67.79it/s]
+
+
+Epoch 4 similar words embedding:
+
+Words similar to 'king':
+over: 0.369
+south: 0.366
+world: 0.363
+u: 0.342
+who: 0.332
+
+Words similar to 'queen':
+file: 0.361
+dead: 0.354
+media: 0.348
+store: 0.334
+real: 0.334
+
+Words similar to 'man':
+personal: 0.416
+memory: 0.357
+<QUOTATION: 0.345
+simple: 0.344
+part: 0.344
+
+Words similar to 'woman':
+microsoft: 0.406
+had: 0.348
+also: 0.337
+anti: 0.336
+years: 0.335
+
+Words similar to 'dog':
+less: 0.373
+no: 0.352
+most: 0.350
+start: 0.350
+however: 0.319
+
+Words similar to 'cat':
+work: 0.387
+start: 0.376
+use: 0.356
+–: 0.350
+building: 0.348
+==============================================
+Epoch 5, Loss: 0.9313: 100%|██████████████████████████████| 738/738 [00:10<00:00, 70.15it/s]
+
+
+Epoch 5 similar words embedding:
+
+Words similar to 'king':
+south: 0.367
+who: 0.342
+over: 0.339
+u: 0.337
+world: 0.333
+
+Words similar to 'queen':
+dead: 0.342
+british: 0.331
+name: 0.320
+startups: 0.312
+file: 0.312
+
+Words similar to 'man':
+personal: 0.403
+part: 0.337
+<QUOTATION: 0.329
+memory: 0.326
+<LEFT: 0.324
+
+Words similar to 'woman':
+microsoft: 0.390
+had: 0.369
+man: 0.346
+software: 0.344
+will: 0.341
+
+Words similar to 'dog':
+less: 0.432
+no: 0.349
+start: 0.348
+most: 0.331
+like: 0.315
+
+Words similar to 'cat':
+start: 0.356
+use: 0.336
+building: 0.335
+work: 0.331
+make: 0.323
+==============================================
+
+
+Words similar to 'king':
+south: 0.367
+who: 0.342
+over: 0.339
+u: 0.337
+world: 0.333
+
+Words similar to 'queen':
+dead: 0.342
+british: 0.331
+name: 0.320
+startups: 0.312
+file: 0.312
+
+Words similar to 'man':
+personal: 0.403
+part: 0.337
+<QUOTATION: 0.329
+memory: 0.326
+<LEFT: 0.324
+
+Words similar to 'woman':
+microsoft: 0.390
+had: 0.369
+man: 0.346
+software: 0.344
+will: 0.341
+
+Words similar to 'dog':
+less: 0.432
+no: 0.349
+start: 0.348
+most: 0.331
+like: 0.315
+
+Words similar to 'cat':
+start: 0.356
+use: 0.336
+building: 0.335
+work: 0.331
+make: 0.323
+Saving...
+Uploading...
+Done!

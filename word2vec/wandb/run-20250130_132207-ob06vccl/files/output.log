@@ -1,0 +1,280 @@
+Epoch 1, Loss: 2.0947: 100%|█████████████████████████████| 443/443 [00:03<00:00, 147.11it/s]
+
+Epoch 1 similar words embedding:
+
+Words similar to 'king':
+motors: 0.292
+dual: 0.285
+structures: 0.278
+i: 0.278
+silicon: 0.277
+
+Words similar to 'queen':
+thank: 0.336
+evan: 0.275
+mcclellan: 0.274
+john: 0.274
+theater: 0.271
+
+Words similar to 'man':
+slide: 0.325
+spontaneous: 0.302
+rapidly: 0.295
+godaddy: 0.294
+advertising: 0.290
+
+Words similar to 'woman':
+author: 0.331
+bill: 0.319
+problem: 0.293
+detect: 0.292
+generator: 0.289
+
+Words similar to 'dog':
+developed: 0.314
+arguing: 0.307
+tourists: 0.286
+commandments: 0.284
+eat: 0.266
+
+Words similar to 'cat':
+economic: 0.336
+verse: 0.306
+carrier: 0.300
+offered: 0.292
+ram: 0.287
+==============================================
+Epoch 2, Loss: 1.9871: 100%|█████████████████████████████| 443/443 [00:02<00:00, 154.45it/s]
+
+
+Epoch 2 similar words embedding:
+
+Words similar to 'king':
+dual: 0.339
+structures: 0.313
+increasing: 0.287
+motors: 0.282
+finally: 0.279
+
+Words similar to 'queen':
+mountains: 0.304
+john: 0.289
+table: 0.269
+thank: 0.267
+calculator: 0.267
+
+Words similar to 'man':
+slide: 0.307
+godaddy: 0.300
+advertising: 0.296
+5: 0.294
+indie: 0.279
+
+Words similar to 'woman':
+atlantic: 0.338
+bill: 0.333
+author: 0.311
+floor: 0.309
+problem: 0.293
+
+Words similar to 'dog':
+eat: 0.331
+developed: 0.320
+arguing: 0.294
+tourists: 0.286
+keeps: 0.270
+
+Words similar to 'cat':
+economic: 0.341
+verse: 0.337
+privacy: 0.314
+purchase: 0.306
+summary: 0.296
+==============================================
+Epoch 3, Loss: 1.7519: 100%|█████████████████████████████| 443/443 [00:02<00:00, 153.11it/s]
+
+
+Epoch 3 similar words embedding:
+
+Words similar to 'king':
+finally: 0.314
+structures: 0.277
+remote: 0.273
+quick: 0.266
+silicon: 0.262
+
+Words similar to 'queen':
+thank: 0.269
+john: 0.258
+trees: 0.248
+mountains: 0.246
+gift: 0.242
+
+Words similar to 'man':
+5: 0.300
+facebook: 0.281
+advertising: 0.278
+known: 0.264
+indie: 0.260
+
+Words similar to 'woman':
+bill: 0.335
+problem: 0.276
+ask: 0.271
+release: 0.267
+floor: 0.266
+
+Words similar to 'dog':
+eat: 0.347
+tourists: 0.330
+developed: 0.285
+agent: 0.282
+devoted: 0.279
+
+Words similar to 'cat':
+economic: 0.327
+purchase: 0.309
+verse: 0.306
+privacy: 0.306
+summary: 0.303
+==============================================
+Epoch 4, Loss: 1.5561: 100%|█████████████████████████████| 443/443 [00:02<00:00, 153.52it/s]
+
+
+Epoch 4 similar words embedding:
+
+Words similar to 'king':
+finally: 0.317
+quick: 0.264
+age: 0.261
+structures: 0.260
+five: 0.253
+
+Words similar to 'queen':
+3: 0.253
+john: 0.252
+thank: 0.251
+real: 0.249
+convert: 0.241
+
+Words similar to 'man':
+5: 0.315
+facebook: 0.299
+most: 0.288
+politics: 0.287
+startup: 0.269
+
+Words similar to 'woman':
+bill: 0.342
+ask: 0.282
+better: 0.280
+what: 0.278
+chinese: 0.276
+
+Words similar to 'dog':
+eat: 0.375
+developed: 0.269
+reason: 0.259
+alchemy: 0.258
+rule: 0.248
+
+Words similar to 'cat':
+economic: 0.311
+days: 0.301
+privacy: 0.284
+offered: 0.269
+verse: 0.265
+==============================================
+Epoch 5, Loss: 1.3283: 100%|█████████████████████████████| 443/443 [00:02<00:00, 152.78it/s]
+
+
+Epoch 5 similar words embedding:
+
+Words similar to 'king':
+finally: 0.338
+five: 0.271
+this: 0.254
+eight: 0.253
+quick: 0.241
+
+Words similar to 'queen':
+3: 0.254
+real: 0.247
+enterprise: 0.243
+john: 0.230
+thank: 0.224
+
+Words similar to 'man':
+most: 0.334
+facebook: 0.324
+5: 0.323
+startup: 0.283
+can: 0.273
+
+Words similar to 'woman':
+bill: 0.311
+what: 0.291
+ask: 0.288
+best: 0.285
+chinese: 0.284
+
+Words similar to 'dog':
+eat: 0.318
+alchemy: 0.270
+time: 0.259
+broken: 0.248
+n: 0.243
+
+Words similar to 'cat':
+economic: 0.307
+days: 0.304
+privacy: 0.295
+count: 0.261
+society: 0.247
+==============================================
+
+
+Words similar to 'king':
+finally: 0.338
+five: 0.271
+this: 0.254
+eight: 0.253
+quick: 0.241
+
+Words similar to 'queen':
+3: 0.254
+real: 0.247
+enterprise: 0.243
+john: 0.230
+thank: 0.224
+
+Words similar to 'man':
+most: 0.334
+facebook: 0.324
+5: 0.323
+startup: 0.283
+can: 0.273
+
+Words similar to 'woman':
+bill: 0.311
+what: 0.291
+ask: 0.288
+best: 0.285
+chinese: 0.284
+
+Words similar to 'dog':
+eat: 0.318
+alchemy: 0.270
+time: 0.259
+broken: 0.248
+n: 0.243
+
+Words similar to 'cat':
+economic: 0.307
+days: 0.304
+privacy: 0.295
+count: 0.261
+society: 0.247
+Saving...
+Uploading...
+Done!

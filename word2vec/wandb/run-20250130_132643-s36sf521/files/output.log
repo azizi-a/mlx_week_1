@@ -1,0 +1,92 @@
+Epoch 1, Loss: 0.7604: 100%|██████████████████████████| 20769/20769 [41:42<00:00,  8.30it/s]
+
+Epoch 1 similar words embedding:
+
+Words similar to 'king':
+charles: 0.401
+crimson: 0.394
+james: 0.391
+louis: 0.385
+donald: 0.373
+
+Words similar to 'queen':
+elizabeth: 0.381
+steve: 0.344
+edward: 0.338
+aaron: 0.324
+character: 0.323
+
+Words similar to 'man':
+mac: 0.390
+finds: 0.382
+rock: 0.373
+writing: 0.371
+update: 0.367
+
+Words similar to 'woman':
+who: 0.340
+initially: 0.339
+original: 0.329
+trying: 0.321
+school: 0.319
+
+Words similar to 'dog':
+council: 0.338
+hackers: 0.331
+gets: 0.325
+offers: 0.310
+attacks: 0.308
+
+Words similar to 'cat':
+levels: 0.326
+typically: 0.321
+european: 0.310
+local: 0.307
+community: 0.303
+==============================================
+
+
+Words similar to 'king':
+charles: 0.401
+crimson: 0.394
+james: 0.391
+louis: 0.385
+donald: 0.373
+
+Words similar to 'queen':
+elizabeth: 0.381
+steve: 0.344
+edward: 0.338
+aaron: 0.324
+character: 0.323
+
+Words similar to 'man':
+mac: 0.390
+finds: 0.382
+rock: 0.373
+writing: 0.371
+update: 0.367
+
+Words similar to 'woman':
+who: 0.340
+initially: 0.339
+original: 0.329
+trying: 0.321
+school: 0.319
+
+Words similar to 'dog':
+council: 0.338
+hackers: 0.331
+gets: 0.325
+offers: 0.310
+attacks: 0.308
+
+Words similar to 'cat':
+levels: 0.326
+typically: 0.321
+european: 0.310
+local: 0.307
+community: 0.303
+Saving...
+Uploading...
+Done!
