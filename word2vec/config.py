@@ -8,7 +8,7 @@ MIN_WORD_FREQUENCY = 8  # Minimum frequency for a word to be included in vocabul
 TOP_K_WORDS_TO_REMOVE = 40 # Number of most frequent words to remove from vocabulary
 
 # Hacker news data
-DB_URL = 'postgres://sy91dhb:g5t49ao@178.156.142.230:5432/hd64m1ki'
+DB_URL = 'postgresql://sy91dhb:g5t49ao@178.156.142.230:5432/hd64m1ki'
 DATA2_PATH = "hn_data"
 QUERY = """
     SELECT title FROM hacker_news.items
@@ -24,7 +24,7 @@ CONTEXT_WINDOW = 2  # Words on each side to consider as context
 # Training configs
 BATCH_SIZE = 2048
 LEARNING_RATE = 0.001
-EPOCHS = 5
+EPOCHS = 8
 NUM_NEGATIVE_SAMPLES = 2  # Number of negative samples per positive sample
 
 # Model saving/loading

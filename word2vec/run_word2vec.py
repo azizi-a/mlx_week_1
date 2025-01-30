@@ -20,6 +20,8 @@ if __name__ == "__main__":
     
     # Combine both text sources
     combined_text = text8_data[:WORDS_TO_PROCESS_COUNT] + " " + hn_data[:WORDS_TO_PROCESS_COUNT]
+
+    print('Combined text length:', len(combined_text))
     
     # Preprocess combined data
     corpus = preprocess(combined_text)

@@ -25,8 +25,8 @@ def preprocess(text: str, min_word_frequency: int = MIN_WORD_FREQUENCY) -> List[
     
     # Remove the most frequent words
     most_common_words = [word for word, _ in stats.most_common(TOP_K_WORDS_TO_REMOVE)]
-    print('common removed words corpus:', most_common_words)
-    print('words in corpus:', len(words))
+    print('Common removed words corpus:', most_common_words)
+    print('Unique words in corpus:', len(words))
 
     return [word for word in words if stats[word] > min_word_frequency and word not in most_common_words]
 

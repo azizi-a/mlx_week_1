@@ -1,8 +1,7 @@
 import requests
 import os
 from config import DATA_URL, DATA1_PATH, DB_URL, DATA2_PATH
-import psycopg2
-from urllib.parse import urlparse
+from sqlalchemy import create_engine, text
 
 def download_text8():
     """Download the text8 dataset if it doesn't exist."""
@@ -57,27 +56,17 @@ def execute_query(query):
     Returns:
         list: List of tuples containing the query results
     """
-    # Parse the DATABASE_URL to get connection parameters
-    db_url = urlparse(DB_URL)
-    
-    # Connect to the database
-    conn = psycopg2.connect(
-        dbname=db_url.path[1:],
-        user=db_url.username,
-        password=db_url.password,
-        host=db_url.hostname,
-        port=db_url.port
-    )
+    # Create SQLAlchemy engine
+    engine = create_engine(DB_URL)
     
     try:
-        # Create a cursor and execute the query
-        with conn.cursor() as cur:
-            cur.execute(query)
-            results = cur.fetchall()
-        return results
+        # Execute query
+        with engine.connect() as connection:
+            result = connection.execute(text(query))
+            return result.fetchall()
     finally:
-        # Always close the connection
-        conn.close()
+        # Dispose of the engine
+        engine.dispose()
 
 if __name__ == "__main__":
     download_text8() 
