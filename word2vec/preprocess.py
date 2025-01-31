@@ -1,6 +1,42 @@
 import collections
 from typing import List, Tuple, Dict
 from config import MIN_WORD_FREQUENCY, TOP_K_WORDS_TO_REMOVE
+import nltk
+from nltk.stem import WordNetLemmatizer
+from nltk.corpus import wordnet
+import nltk.data
+
+# Download required NLTK data
+nltk.download('averaged_perceptron_tagger')
+nltk.download('wordnet')
+nltk.download('punkt')
+nltk.download('punkt_tab')
+nltk.download('averaged_perceptron_tagger_eng')
+
+def get_wordnet_pos(word):
+    """Map POS tag to first character used by WordNetLemmatizer"""
+    tag = nltk.pos_tag([word])[0][1][0].upper()
+    tag_dict = {
+        "J": wordnet.ADJ,
+        "N": wordnet.NOUN,
+        "V": wordnet.VERB,
+        "R": wordnet.ADV
+    }
+    return tag_dict.get(tag, wordnet.NOUN)
+
+def lemmatize_text(text):
+    lemmatizer = WordNetLemmatizer()
+    
+    # Tokenize the text
+    tokens = nltk.word_tokenize(text.lower())
+    
+    # Lemmatize each token with its POS tag
+    lemmatized_tokens = [
+        lemmatizer.lemmatize(word, get_wordnet_pos(word))
+        for word in tokens
+    ]
+    
+    return lemmatized_tokens
 
 def preprocess(text: str, min_word_frequency: int = MIN_WORD_FREQUENCY) -> List[str]:
     """Preprocess text and return list of words."""
@@ -14,13 +50,13 @@ def preprocess(text: str, min_word_frequency: int = MIN_WORD_FREQUENCY) -> List[
         ('{', '<LEFT_BRACE>'), ('}', '<RIGHT_BRACE>'), ('/', '<SLASH>'), ('\\', '<BACKSLASH>'),
         ('*', '<ASTERISK>'), ('&', '<AMPERSAND>'), ('#', '<HASH>'), ('@', '<AT>'), ('_', '<UNDERSCORE>'),
         ('=', '<EQUALS>'), ('+', '<PLUS>'), ('-', '<MINUS>'), ('%', '<PERCENT>'), ('^', '<CARET>'),
-        ('~', '<TILDE>'), ('|', '<PIPE>'), 
+        ('~', '<TILDE>'), ('|', '<PIPE>'), ('”', '<QUOTATION_MARK>'), ('“', '<QUOTATION_MARK>'),
     ]
     
     for orig, replacement in special_tokens:
         text = text.replace(orig, f' {replacement} ')
     
-    words = text.split()
+    words = lemmatize_text(text)
     stats = collections.Counter(words)
     
     # Remove the most frequent words
