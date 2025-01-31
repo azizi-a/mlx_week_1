@@ -6,12 +6,23 @@ from sklearn.model_selection import train_test_split
 from SkipGram import SkipGram  # Import SkipGram model
 import config
 import json
+import nltk
+from nltk.stem import WordNetLemmatizer
+from nltk.corpus import wordnet
+
+# Download required NLTK data
+nltk.download('averaged_perceptron_tagger')
+nltk.download('wordnet')
+nltk.download('punkt')
+nltk.download('punkt_tab')
+nltk.download('averaged_perceptron_tagger_eng')
+
 class HNDataset(Dataset):
     def __init__(self, titles, scores):
         self.titles = titles
         self.scores = scores
 
-        with open('word_to_id.json', 'r') as f:
+        with open(config.WORD_TO_ID, 'r') as f:
             self.word_to_id = json.load(f)
         
         # Load pretrained Word2Vec model
@@ -25,14 +36,16 @@ class HNDataset(Dataset):
         title = self.titles[idx]
         score = self.scores[idx]
         
-        # Convert title to embedding
-        words = title.lower().split()
+        # Lemmatize title
+        lemmatized_words = lemmatize_text(title)
+        
+        # Convert lemmatized tokens to embeddings
         word_embeddings = []
 
-        with open('word_to_id.json', 'r') as f:
+        with open(config.WORD_TO_ID, 'r') as f:
             word_to_id = json.load(f)
         
-        for word in words:
+        for word in lemmatized_words:
             if word in word_to_id:
                 embedding = self.word2vec.get_embedding(word)
                 word_embeddings.append(embedding)
@@ -81,3 +94,21 @@ def prepare_data(df):
     )
     
     return train_loader, val_loader, test_loader 
+
+def get_wordnet_pos(word):
+    """Map POS tag to first character used by WordNetLemmatizer"""
+    tag = nltk.pos_tag([word])[0][1][0].upper()
+    tag_dict = {
+        "J": wordnet.ADJ,
+        "N": wordnet.NOUN,
+        "V": wordnet.VERB,
+        "R": wordnet.ADV
+    }
+    return tag_dict.get(tag, wordnet.NOUN)
+
+def lemmatize_text(text: str):
+    """Lemmatize text using NLTK."""
+    lemmatizer = WordNetLemmatizer()
+    tokens = nltk.word_tokenize(text.lower())
+    lemmatized_tokens = [lemmatizer.lemmatize(word, get_wordnet_pos(word)) for word in tokens]
+    return lemmatized_tokens

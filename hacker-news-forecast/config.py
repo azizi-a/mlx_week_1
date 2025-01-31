@@ -21,9 +21,10 @@ RANDOM_SEED = 42
 
 # Model architecture configs
 WORD2VEC_WEIGHTS = '../word2vec/weights.pt'
-VOCAB_SIZE =  17138 #25155616
+WORD_TO_ID = '../word2vec/word_to_id.json'
+ID_TO_WORD = '../word2vec/id_to_word.json'
 EMBEDDING_DIM = 128
-HIDDEN_LAYERS = [32, 16, 8] #[256, 128, 64]  # Size of hidden layers
+HIDDEN_LAYERS = [256, 128, 64]  # Size of hidden layers
 DROPOUT_RATE = 0.2
 
 # Training configs
