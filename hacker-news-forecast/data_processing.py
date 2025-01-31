@@ -5,14 +5,17 @@ from torch.utils.data import Dataset, DataLoader
 from sklearn.model_selection import train_test_split
 from SkipGram import SkipGram  # Import SkipGram model
 import config
-
+import json
 class HNDataset(Dataset):
     def __init__(self, titles, scores):
         self.titles = titles
         self.scores = scores
+
+        with open('word_to_id.json', 'r') as f:
+            self.word_to_id = json.load(f)
         
         # Load pretrained Word2Vec model
-        self.word2vec = SkipGram.load(config.WORD2VEC_WEIGHTS)
+        self.word2vec = SkipGram.load(config.WORD2VEC_WEIGHTS, self.word_to_id, config.EMBEDDING_DIM)
         self.word2vec.eval()  # Set to evaluation mode
         
     def __len__(self):
@@ -25,9 +28,12 @@ class HNDataset(Dataset):
         # Convert title to embedding
         words = title.lower().split()
         word_embeddings = []
+
+        with open('word_to_id.json', 'r') as f:
+            word_to_id = json.load(f)
         
         for word in words:
-            if word in self.word2vec.vocab:
+            if word in word_to_id:
                 embedding = self.word2vec.get_embedding(word)
                 word_embeddings.append(embedding)
         

@@ -11,6 +11,7 @@ def gather_data():
     try:
         df = pd.read_sql(QUERY, engine)
         print(f"Retrieved {len(df)} records")
+        df.to_csv('hn_data.csv', index=False)
         return df
     except Exception as e:
         print(f"Error gathering data: {e}")

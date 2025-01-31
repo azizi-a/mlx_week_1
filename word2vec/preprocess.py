@@ -6,6 +6,7 @@ from nltk.stem import WordNetLemmatizer
 from nltk.corpus import wordnet
 import nltk.data
 import json
+
 # Download required NLTK data
 nltk.download('averaged_perceptron_tagger')
 nltk.download('wordnet')

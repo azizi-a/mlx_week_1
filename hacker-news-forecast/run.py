@@ -4,8 +4,10 @@ import torch
 import torch.nn as nn
 from torch.optim import Adam
 import numpy as np
+import os
+import pandas as pd
+import wandb
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
-
 from data_gathering import gather_data
 from data_processing import prepare_data
 from model import UpvotePredictor
@@ -48,7 +50,9 @@ def train_model(model, train_loader, val_loader, criterion, optimizer):
         
         train_loss = np.mean(train_losses)
         val_loss = np.mean(val_losses)
-        
+
+        wandb.log({'train_loss': train_loss, 'val_loss': val_loss})
+
         print(f"Epoch {epoch+1}/{config.EPOCHS}")
         print(f"Train Loss: {train_loss:.4f}")
         print(f"Val Loss: {val_loss:.4f}")
@@ -88,7 +92,10 @@ def evaluate_model(model, test_loader):
 
 def main():
     # Gather data
-    df = gather_data()
+    if not os.path.exists('hn_data.csv'):
+        print("HN data not found. Running data_gathering.py first...")
+        gather_data()
+    df = pd.read_csv('hn_data.csv')
     if df is None:
         return
     
@@ -100,12 +107,29 @@ def main():
     criterion = nn.MSELoss()
     optimizer = Adam(model.parameters(), lr=config.LEARNING_RATE)
     
+    # Initialize wandb
+    wandb.init(
+        project='word2vec',
+        config={
+            'dataset': 'hn_data',
+            'model': 'UpvotePredictor',
+        }
+    )
+
     # Train model
     train_model(model, train_loader, val_loader, criterion, optimizer)
     
     # Load best model and evaluate
     best_model = UpvotePredictor.load(config.MODEL_SAVE_PATH)
     evaluate_model(best_model, test_loader)
+
+    # Save model to wandb
+    print('Uploading...')
+    artifact = wandb.Artifact('model', type='model')
+    artifact.add_file(config.MODEL_SAVE_PATH)
+    wandb.log_artifact(artifact)
+    print('Done!')
+    wandb.finish()
 
 if __name__ == "__main__":
     main() 
