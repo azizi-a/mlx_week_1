@@ -2,9 +2,8 @@
 
 import torch
 from torch.utils.data import Dataset, DataLoader
-import numpy as np
 from sklearn.model_selection import train_test_split
-from word2vec.model import Word2Vec  # Import your Word2Vec model
+from SkipGram import SkipGram  # Import SkipGram model
 import config
 
 class HNDataset(Dataset):
@@ -13,7 +12,7 @@ class HNDataset(Dataset):
         self.scores = scores
         
         # Load pretrained Word2Vec model
-        self.word2vec = Word2Vec.load(config.WORD2VEC_WEIGHTS)
+        self.word2vec = SkipGram.load(config.WORD2VEC_WEIGHTS)
         self.word2vec.eval()  # Set to evaluation mode
         
     def __len__(self):
