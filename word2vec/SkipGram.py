@@ -12,6 +12,8 @@ from config import (
 class SkipGram(nn.Module):
     def __init__(self, vocab_size: int, embedding_dim: int):
         super().__init__()
+        self.vocab_size = vocab_size
+        self.embedding_dim = embedding_dim
         self.embeddings = nn.Embedding(vocab_size, embedding_dim)
         # Forward weight matrix - maps embeddings back to vocabulary size for prediction
         self.forward_weight_matrix = nn.Linear(embedding_dim, vocab_size, bias=False)
@@ -28,7 +30,7 @@ def train_model(corpus: list, words_to_ids: Dict[str, int],
                 epochs: int = EPOCHS, 
                 batch_size: int = BATCH_SIZE, 
                 learning_rate: float = LEARNING_RATE):
-    
+
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     vocab_size = len(words_to_ids)
     

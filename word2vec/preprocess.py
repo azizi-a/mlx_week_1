@@ -40,7 +40,7 @@ def lemmatize_text(text):
 
 def preprocess(text: str, min_word_frequency: int = MIN_WORD_FREQUENCY) -> List[str]:
     """Preprocess text and return list of words."""
-    text = text.lower()
+    words = lemmatize_text(text)
     # Add special tokens for punctuation
     special_tokens = [
         ('.', '<PERIOD>'), (',', '<COMMA>'), ('"', '<QUOTATION_MARK>'),
@@ -54,9 +54,10 @@ def preprocess(text: str, min_word_frequency: int = MIN_WORD_FREQUENCY) -> List[
     ]
     
     for orig, replacement in special_tokens:
-        text = text.replace(orig, f' {replacement} ')
+        for word in text:
+            if word == orig:
+                word = replacement
     
-    words = lemmatize_text(text)
     stats = collections.Counter(words)
     
     # Remove the most frequent words
