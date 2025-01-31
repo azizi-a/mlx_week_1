@@ -5,7 +5,7 @@ import nltk
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import wordnet
 import nltk.data
-
+import json
 # Download required NLTK data
 nltk.download('averaged_perceptron_tagger')
 nltk.download('wordnet')
@@ -74,5 +74,14 @@ def create_lookup_tables(words: List[str]) -> Tuple[Dict[str, int], Dict[int, st
     
     words_to_ids = {word: i for i, word in enumerate(sorted_vocab)}
     ids_to_words = {i: word for word, i in words_to_ids.items()}
+
+    # Save lookup tables to files
+    with open('word_to_id.json', 'w') as f:
+        json.dump(words_to_ids, f)
+    
+    with open('id_to_word.json', 'w') as f:
+        json.dump(ids_to_words, f)
+    
+    print(f"Saved lookup tables with {len(words_to_ids)} words")
     
     return words_to_ids, ids_to_words 

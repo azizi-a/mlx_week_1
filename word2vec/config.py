@@ -3,7 +3,7 @@
 # Data processing configs
 DATA_URL = "https://huggingface.co/datasets/ardMLX/text8/resolve/main/text8"
 DATA1_PATH = "text8"
-WORDS_TO_PROCESS_COUNT = 100_000#_000 # Number of words to use for training
+WORDS_TO_PROCESS_COUNT = 100_000_000 # Number of words to use for training
 MIN_WORD_FREQUENCY = 8  # Minimum frequency for a word to be included in vocabulary
 TOP_K_WORDS_TO_REMOVE = 40 # Number of most frequent words to remove from vocabulary
 
