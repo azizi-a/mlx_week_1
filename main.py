@@ -4,18 +4,13 @@ def main():
         .strip()
         .lower()
     )
-    # Allow selection by number as well
-    if choice == "1":
-        choice = "word2vec"
-    elif choice == "2":
-        choice = "hacker-news-forecast"
-    if choice == "word2vec":
+    if choice == "1" or choice == "word2vec":
         print("Running Word2Vec model...")
         # Import and run word2vec script
         import word2vec.main as word2vec_main
 
         word2vec_main.main()
-    elif choice == "hacker-news-forecast":
+    elif choice == "2" or choice == "hacker-news-forecast":
         print("Running Hacker News Forecast model...")
         # Import and run hacker news forecast script
         import hacker_news_forecast.main as hn_forecast_main
