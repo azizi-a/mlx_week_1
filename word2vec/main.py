@@ -1,18 +1,15 @@
 import wandb
 import torch
 
-import word2vec.config as config
-from word2vec.data import download_text8, get_data_from_postgres
-from word2vec.preprocess import preprocess, create_lookup_tables
-from word2vec.model import train_model, get_similar_words
+from word2vec import config, data, preprocessing, model as m
 
 
 def main():
     # Get text8 data
-    text8_data = download_text8()
+    text8_data = data.download_text8()
 
     # Get Hacker News data
-    hn_data = get_data_from_postgres(config.QUERY, config.DATA2_PATH)
+    hn_data = data.get_data_from_postgres(config.QUERY, config.DATA2_PATH)
 
     # Combine both text sources
     combined_text = (
@@ -24,8 +21,8 @@ def main():
     print("Combined text length:", len(combined_text))
 
     # Preprocess combined data
-    corpus = preprocess(combined_text)
-    words_to_ids, ids_to_words = create_lookup_tables(corpus)
+    corpus = preprocessing.preprocess(combined_text)
+    words_to_ids, ids_to_words = preprocessing.create_lookup_tables(corpus)
 
     # Initialize wandb
     wandb.init(
@@ -37,7 +34,7 @@ def main():
     )
 
     # Train model
-    model = train_model(corpus, words_to_ids, ids_to_words)
+    model = m.train_model(corpus, words_to_ids, ids_to_words)
 
     # Save model
     torch.save(model.state_dict(), config.MODEL_SAVE_PATH)
@@ -47,7 +44,9 @@ def main():
     for word in test_words:
         if word in words_to_ids:
             print(f"\nWords similar to '{word}':")
-            similar_words = get_similar_words(model, word, words_to_ids, ids_to_words)
+            similar_words = m.get_similar_words(
+                model, word, words_to_ids, ids_to_words
+            )
             for similar_word, similarity in similar_words:
                 print(f"{similar_word}: {similarity:.3f}")
 

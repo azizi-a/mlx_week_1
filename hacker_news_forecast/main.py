@@ -6,9 +6,7 @@ import wandb
 import sklearn
 from tqdm import tqdm
 
-import hacker_news_forecast.config as config
-from hacker_news_forecast.data import prepare_data, gather_data
-from hacker_news_forecast.model import UpvotePredictor
+from hacker_news_forecast import config, data, model as m
 
 
 def train_model(model, train_loader, val_loader, criterion, optimizer):
@@ -104,16 +102,16 @@ def main():
     # Gather data
     if not os.path.exists(config.DATA_PATH):
         print("HN data not found. Running data_gathering.py first...")
-        gather_data()
+        data.gather_data()
     df = pd.read_csv(config.DATA_PATH)
     if df is None:
         return
 
     # Prepare data
-    train_loader, val_loader, test_loader = prepare_data(df)
+    train_loader, val_loader, test_loader = data.prepare_data(df)
 
     # Initialize model, criterion, and optimizer
-    model = UpvotePredictor()
+    model = m.UpvotePredictor()
     criterion = torch.nn.MSELoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=config.LEARNING_RATE)
 

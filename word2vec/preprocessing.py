@@ -1,8 +1,9 @@
 import collections
 import typing
-import word2vec.config as config
 import nltk
 import json
+
+from word2vec import config
 
 # Download required NLTK data
 nltk.download("averaged_perceptron_tagger")

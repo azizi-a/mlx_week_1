@@ -5,8 +5,8 @@ import nltk
 import pandas as pd
 import sqlalchemy
 
+from hacker_news_forecast import config
 import word2vec.model
-import hacker_news_forecast.config as config
 
 # Download required NLTK data
 nltk.download("averaged_perceptron_tagger")

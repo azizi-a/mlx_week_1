@@ -1,7 +1,8 @@
-import word2vec.config as config
 import os
 import requests
 import sqlalchemy
+
+from word2vec import config
 
 
 def download_text8():

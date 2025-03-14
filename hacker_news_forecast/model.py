@@ -1,5 +1,6 @@
 import torch
-import hacker_news_forecast.config as config
+
+from hacker_news_forecast import config
 
 
 class UpvotePredictor(torch.nn.Module):

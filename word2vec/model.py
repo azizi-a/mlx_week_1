@@ -2,7 +2,8 @@ import torch
 import typing
 import tqdm
 import wandb
-import word2vec.config as config
+
+from word2vec import config
 
 
 class SkipGram(torch.nn.Module):
