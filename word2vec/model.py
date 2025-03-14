@@ -33,6 +33,9 @@ class SkipGram(torch.nn.Module):
         )
         return -(pos_loss + neg_loss.sum(1)).mean()
 
+    def get_embedding(self, token):
+        return self.embeddings(torch.tensor([token])).squeeze(0)
+
 
 def train_model(
     corpus: list,

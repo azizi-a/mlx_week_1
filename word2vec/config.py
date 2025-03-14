@@ -28,7 +28,7 @@ EPOCHS = 8
 NUM_NEGATIVE_SAMPLES = 2  # Number of negative samples per positive sample
 
 # Model saving/loading
-MODEL_SAVE_PATH = "model/weights.pt"
+MODEL_SAVE_PATH = "model/word2vec_weights.pt"
 
 # Testing configs
 TOP_K_SIMILAR = 5  # Number of similar words to return when testing
